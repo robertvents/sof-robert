@@ -206,6 +206,7 @@ function submitForm() {
   console.log(`Date of Birth: ${dob}`);
   console.log(`Course: ${course}`);
   console.log(`Payment Scheme: ${payment}`);
+  window.open('https://lotapola.github.io/peclass/');
 }
 
 class Ball {
