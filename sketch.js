@@ -18,10 +18,10 @@ function preload() {
 
 
 function setup() {
-  createCanvas(500, 700); 
+  createCanvas(1920,1080); 
   background(240);
   textFont(smallFont);
-  fullscreen(true);
+ 
   
     // Dodaj załadowany font jako niestandardowy font w CSS
   let fontFace = new FontFace('CustomFont', `url(CoreSansC.ttf)`);
@@ -87,7 +87,7 @@ function draw() {
   if (filterOn) {
     applyPixelation();
   } else {
-    image(video, width - 220, 20, 200, 150);
+    image(video, width - 990, 20, 200, 150);
   }
 
   swpsDir = swpsBall.update(swpsDir);
@@ -206,7 +206,7 @@ function submitForm() {
   console.log(`Date of Birth: ${dob}`);
   console.log(`Course: ${course}`);
   console.log(`Payment Scheme: ${payment}`);
-  window.open("https://lotapola.github.io/peclass/","_self");
+  window.open('https://lotapola.github.io/peclass/');
 }
 
 class Ball {
